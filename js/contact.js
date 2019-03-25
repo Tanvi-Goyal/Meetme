@@ -83,3 +83,22 @@ $(document).ready(function(){
         
  })(jQuery)
 })
+
+
+
+
+$('.submit_btn').click(function(e) {
+    e.preventDefault();
+
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var subject = $('#subject').val();
+    var message = $('#message').val();
+
+    $.get('https://tanvi-website.herokuapp.com/send_email/' + name + '/' + email + '/' + subject + '/' + message, (data) => {
+        swal('Thanks for Contacting', 'Check your Inbox to confirm', 'success')
+        .then(() => {
+          location.reload();
+        });
+    })
+})

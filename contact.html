@@ -19,6 +19,18 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136855896-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136855896-1');
+</script>
+
+
     <body>
         
         <!--================Header Menu Area =================-->
@@ -83,7 +95,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-9">
-                                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                                        <form class="row contact_form" method="post" id="contactForm">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -169,10 +181,7 @@
         <!-- contact js -->
         <script src="js/jquery.form.js"></script>
         <script src="js/jquery.validate.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="js/contact.js"></script>
-        <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="js/gmaps.min.js"></script>
-        <script src="js/theme.js"></script>
     </body>
 </html>
