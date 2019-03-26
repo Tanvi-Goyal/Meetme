@@ -51,7 +51,6 @@ $(document).ready(function(){
                 },
                 message: {
                     required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all?"
                 }
             },
             submitHandler: function(form) {

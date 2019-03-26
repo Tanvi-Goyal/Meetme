@@ -72,6 +72,15 @@ a {
   margin-bottom: 10px;
   background: transparent;
 }
+.web_image {
+  height: 60px;
+}
+
+@media(max-width:992px) {
+  .web_image {
+    padding: 10px; 
+  }
+}
 
 .experience_heading {
 font-size: 20px;
@@ -2609,18 +2618,11 @@ h6 {
 .wel_item {
   border: 2px solid #878ff3fd;
   padding: 20px 20px;
-  
   border-radius: 5px; }
-
   .wel_item:hover{
     background: #80cbf0;
     border: 4px solid rgb(89, 89, 241);
   }
-  .wel_item i {
-    font-size: 24px;
-    background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
   .wel_item h5 {
     font-size: 18px;
     font-family: "Heebo", sans-serif;
